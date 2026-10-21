@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ED Legacy",
+  "description": "Ramène à la joie votre ENT Ecole Directe ! Il y a suffisamment de dépression avec les cours, n'en ajoutez pas svp.",
+  "version": "0.0.1",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.ecoledirecte.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ]
+}
