@@ -12,6 +12,14 @@ function addStyle(styleString) {
 }
 
 addStyle(`
+
+:root {
+    --bs-link-color-rgb: 46, 106, 200!important;
+    --bs-link-hover-color-rgb: 15, 143, 209!important;
+}
+
+
+
 button.btn-params.btn-outline-primary {
     border: none;
     text-align: left;
@@ -26,6 +34,16 @@ button.btn-params.btn-outline-primary:active {
 
 div.filtres-agenda {
     gap: 0rem !important;
+}
+
+div.ed-select-agendas.bloc-filtre {
+    padding: 8px 0;
+}
+
+button.lien-partage {
+    --bs-btn-font-size: 12px!important;
+    width: 30px;
+    height: 30px;
 }
 
 button.btn-sm.btn-icon[edmodalfocusinit=""] {
@@ -57,4 +75,44 @@ button.btn-sm.btn-icon[edmodalfocusinit=""]:active {
 tr.groupematiere > td {
     background-color: var(--background-table-header-first)!important;
 }
+
+.focus-blue:focus, .focus-blue:focus-visible {
+    box-shadow: 0 0 0 .2rem var(--light-primary-color) !important;
+}
+
+.ed-card > .card-header {
+    padding: 15px 60px 0px;
+}
+
+button.mt-1 {
+    margin-top: 0px!important;
+}
+
+.table > thead > tr > th:not(.screen-reader).sortable-header::before, .table > thead > tr > th:not(.no-style).sortable-header::before {
+    filter: none;
+}
+
+.btn-icon {
+    --bs-btn-padding-y: 0rem;
+}
+
+.fa-trash-can {
+    color: var(--secondary-color);
+}
+
+/* forgot password page: */
+
+button.l-7, button.l-9 {
+    background-color: var(--light-primary-color);
+    transition: all 200ms ease 0ms;
+}
+
+button.l-7:hover, button.l-9:hover {
+    background-color: var(--smalldark-primary-color);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .2rem var(--light-primary-color) !important;
+}
+
 `);
